@@ -1,15 +1,19 @@
-
-import './App.css'
-import { Nav } from './component/nav/Nav'
+import "./App.css";
+import { Banner } from "./component/banner/Banner";
+import { Header } from "./component/header/Header";
+import { Nav } from "./component/nav/Nav";
+import { ProductList } from "./component/productList/ProductList";
 
 function App() {
-
-
   return (
     <>
-     <Nav/> 
+      <Nav />
+      <Banner/>
+      <Header/>
+      <ProductList/>
+      
     </>
-  )
+  );
 }
 
-export default App
+export default App;
