@@ -1,30 +1,37 @@
 .section {
-    background-color: #f8f8f8; /* Color de fondo */
-    padding: 20px; /* Espaciado interno */
-    font-family: 'Arial', sans-serif; /* Tipo de letra */
-  }
-  
-  .h1 {
-    color: #333; /* Color del título */
-    text-align: center; /* Alineación del título */
-  }
-  
-  .steps {
-    display: flex; /* Distribución en fila */
-    justify-content: space-around; /* Espaciado entre elementos */
-  }
-  
-  .step {
-    text-align: center; /* Alineación del texto de cada paso */
-  }
-  
-  .step-title {
-    font-size: 24px; /* Tamaño del título de cada paso */
-    font-weight: bold; /* Peso de la fuente */
-    color: #555; /* Color del título */
-  }
-  
-  p {
-    color: #666; /* Color del texto descriptivo */
-    font-size: 16px; /* Tamaño del texto descriptivo */
-  }
+  background-color: #f8f8f8; /* Color de fondo */
+  padding: 20px; /* Espaciado interno */
+  font-family: "Arial", sans-serif; /* Tipo de letra */
+}
+
+.h1 {
+  color: #333; /* Color del título */
+  text-align: center; /* Alineación del título */
+}
+
+.steps {
+  display: flex; /* Distribución en fila */
+  justify-content: space-around; /* Espaciado entre elementos */
+}
+
+.step {
+  text-align: center; /* Alineación del texto de cada paso */
+}
+
+.step-title {
+  font-size: 24px; /* Tamaño del título de cada paso */
+  font-weight: bold; /* Peso de la fuente */
+  color: #555; /* Color del título */
+}
+
+p {
+  color: #666; /* Color del texto descriptivo */
+  font-size: 16px; /* Tamaño del texto descriptivo */
+}
+
+.iconStyle {
+  background-color: rgb(255, 120, 143);
+  height: 90px;
+  width: 90px;
+  border-radius: 30%;
+}

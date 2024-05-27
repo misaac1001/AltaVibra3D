@@ -1,0 +1,26 @@
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f0f0f0; /* Color de fondo del contenedor */
+  padding: 20px;
+  border-radius: 10px; /* Bordes redondeados */
+}
+
+.seccion {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  margin: 10px 0;
+}
+
+.icono-burbuja,
+.icono-whatsapp,
+.icono-ubicacion {
+  /* Estilos para los íconos */
+  margin-right: 10px;
+  background-color: rgb(255, 120, 143);
+  height: 40px;
+  width: 40px;
+  border-radius: 30%;
+}
