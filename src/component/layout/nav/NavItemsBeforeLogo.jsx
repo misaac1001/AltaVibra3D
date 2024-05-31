@@ -15,16 +15,9 @@ const NavItemsBeforeLogo = () => {
   ];
 
   return [
-    <div
-      className="lg:flex lg:items-center lg:order-2 lg:mx-7"
-      key="navItemsBeforeLogo"
-    >
+    <div key="navItemsBeforeLogo" className="flex flex-col lg:flex-row">
       {navItemsBeforeLogo.map((link) => (
-        <NavLink
-          key={link.id}
-          to={`/${link.path}`}
-          className="block lg:inline-block lg:mt-0 lg:mx-5 text-black hover:text-black mr-4"
-        >
+        <NavLink key={link.id} to={`/${link.path}`} className="mx-4">
           {link.title}
         </NavLink>
       ))}

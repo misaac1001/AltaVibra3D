@@ -1,8 +1,8 @@
 import "./header.css";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import RemoveRedEyeIcon from "@mui/icons-material/RemoveRedEye";
-import TouchAppIcon from '@mui/icons-material/TouchApp';
-import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import TouchAppIcon from "@mui/icons-material/TouchApp";
+import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 
 export const Header = () => {
   return (
@@ -25,9 +25,9 @@ export const Header = () => {
             Descubrí los increíbles productos que tenemos para ofrecerte
           </p>
         </div>
-        <div className="flex items-center space-x-2">
-          <ArrowForwardIosIcon className="text-gray-500" />
-          <ArrowForwardIosIcon className="text-gray-500" />
+        <div className="hidden lg:block flex items-center space-x-2 ">
+          <ArrowForwardIosIcon className=" text-gray-500" />
+          <ArrowForwardIosIcon className=" text-gray-500" />
         </div>
         <div className="flex flex-col items-center justify-center text-center">
           <div className="iconStyle flex justify-center mb-5">
@@ -38,10 +38,10 @@ export const Header = () => {
           </div>
           <p className="text-xl text-black font-semibold mb-3">ELEGÍ</p>
           <p className="text-black">
-          Selecciona tu favorito desde un amplio catalogo
+            Selecciona tu favorito desde un amplio catalogo
           </p>
         </div>
-        <div className="flex items-center space-x-2">
+        <div className="hidden lg:block flex items-center space-x-2">
           <ArrowForwardIosIcon className="text-gray-500" />
           <ArrowForwardIosIcon className="text-gray-500" />
         </div>
@@ -54,7 +54,7 @@ export const Header = () => {
           </div>
           <p className="text-xl text-black font-semibold mb-3">PEDÍ</p>
           <p className="text-black">
-          Contáctate directamente con nosotras y realiza tu pedido
+            Contáctate directamente con nosotras y realiza tu pedido
           </p>
         </div>
       </div>
