@@ -12,17 +12,22 @@ const NavItemsBeforeLogo = () => {
       id: "productos",
       path: "productos",
     },
+    {
+      title: "Proceso de compra",
+      id: "proceso",
+      path: "proceso",
+    },
   ];
 
-  return [
+  return (
     <div key="navItemsBeforeLogo" className="flex flex-col lg:flex-row">
       {navItemsBeforeLogo.map((link) => (
-        <NavLink key={link.id} to={`/${link.path}`} className="mx-4">
+        <NavLink key={link.id} to={`/link/${link.path}`} className="mx-4">
           {link.title}
         </NavLink>
       ))}
-    </div>,
-  ];
+    </div>
+  );
 };
 
 export default NavItemsBeforeLogo;

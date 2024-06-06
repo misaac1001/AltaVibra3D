@@ -13,11 +13,11 @@ export const ContactInfo = () => {
           <ContactImage />
         </div>
         <span className="w-full lg:w-1/2 lg:p-4">
-          <div className="seccion mb-4">
-            <div className="flex row lg:mb-2 mb- ">
+          <div className="seccion ">
+            <div className="flex row mb-2  ">
               <div className="icono-burbuja">
                 <AutoStoriesIcon
-                  className="mt-2 mx-2"
+                  className="lg:mt-2 lg:mx-2 mx-6 sm-icon-size"
                   style={{ color: "white", fontSize: "1.5rem" }}
                 />
               </div>
@@ -35,7 +35,7 @@ export const ContactInfo = () => {
             <div className="flex row mb-2">
               <div className="icono-burbuja ">
                 <WhatsAppIcon
-                  className="mt-2 mx-2 iconSize"
+                  className="lg:mt-2 lg:mx-2 mx-6 sm-icon-size"
                   style={{ color: "white", fontSize: "1.5rem" }}
                 />
               </div>
@@ -50,7 +50,7 @@ export const ContactInfo = () => {
             <div className="flex row mb-2 ">
               <div className="icono-burbuja">
                 <LocationOnIcon
-                  className="lg:mt-2 lg:mx-2"
+                  className="lg:mt-2 lg:mx-2 mx-6 sm-icon-size"
                   style={{ color: "white", fontSize: "1.5rem" }}
                 />
               </div>
