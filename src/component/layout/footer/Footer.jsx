@@ -32,7 +32,7 @@ export const Footer = () => {
   return (
     <>
       <footer>
-        <section className="flex justify-around lg:flex-row flex-col items-center mb-5 mt-5">
+        <section className="flex justify-around lg:flex-row flex-col items-center mb-5 mt-5" style={{background:"#FFF9F9"}}>
           <div className="logoF">
             <Logo className="" />
           </div>
@@ -42,7 +42,7 @@ export const Footer = () => {
               {" "}
               <strong>Alta Vibra 3D</strong>{" "}
             </h1>
-            <div key="navItemsAfterLogo" className="flex flex-col items-center">
+            <div key="navItemsAfterLogo" className="flex flex-col items-center txtFooter">
               {navItems.map((link) => (
                 <div key={link.id} to={`/${link.path}`} className="my-2">
                   {link.title}

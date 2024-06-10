@@ -12,21 +12,21 @@ export const ContactInfo = () => {
         <div className="hidden lg:block lg:w-1/2 p-4">
           <ContactImage />
         </div>
-        <span className="w-full lg:w-1/2 lg:p-4">
+        <span className="w-full lg:w-1/2 lg:p-4 ">
           <div className="seccion ">
             <div className="flex row mb-2  ">
               <div className="icono-burbuja">
                 <AutoStoriesIcon
-                  className="lg:mt-2 lg:mx-2 mx-6 sm-icon-size"
-                  style={{ color: "white", fontSize: "1.5rem" }}
+                  className="lg:mt-3 lg:mx-3 mx-6 sm-icon-size"
+                  style={{ color: "white", fontSize: "27px" }}
                 />
               </div>
-              <h1 className="mx-5 my-1">
+              <h4 className="mx-5">
                 {" "}
                 <strong>Somos </strong>{" "}
-              </h1>
+              </h4>
             </div>
-            <p>
+            <p className="txtSm">
               Somos un emprendimiento familiar dedicado a crear diseños
               articulados en 3D.
             </p>
@@ -35,32 +35,31 @@ export const ContactInfo = () => {
             <div className="flex row mb-2">
               <div className="icono-burbuja ">
                 <WhatsAppIcon
-                  className="lg:mt-2 lg:mx-2 mx-6 sm-icon-size"
-                  style={{ color: "white", fontSize: "1.5rem" }}
+                  className="lg:mt-3 lg:mx-3 mx-6 sm-icon-size"
+                  style={{ color: "white", fontSize: "27px" }}
                 />
               </div>
-              <h1 className="mx-5 my-1">
+              <h4 className="mx-5">
                 {" "}
                 <strong>Atención por WhatsApp </strong>{" "}
-              </h1>
+              </h4>
             </div>
-            <p>Contactanos directamente a nuestro whatsapp</p>
+            <p className="txtSm">Contactanos directamente a nuestro whatsapp</p>
           </div>
           <div className="seccion">
             <div className="flex row mb-2 ">
               <div className="icono-burbuja">
                 <LocationOnIcon
-                  className="lg:mt-2 lg:mx-2 mx-6 sm-icon-size"
-                  style={{ color: "white", fontSize: "1.5rem" }}
+                  className="lg:mt-3 lg:mx-3 mx-6 sm-icon-size"
+                  style={{ color: "white", fontSize: "27px" }}
                 />
               </div>
-              <h1 className="mx-5 my-1">
+              <h4 className="mx-5 ">
                 {" "}
                 <strong>Ubicación</strong>{" "}
-              </h1>
+              </h4>
             </div>
-            <p>Visitanos en:</p>
-            {/* Agrega aquí más detalles de ubicación si es necesario */}
+            <p className="txtSm">Visitanos en:</p>
           </div>
         </span>
       </div>

@@ -5,24 +5,24 @@ const NavItemsBeforeLogo = () => {
     {
       title: "Home",
       id: "home",
-      path: "home",
+      hash: "/",
     },
     {
       title: "Productos",
       id: "productos",
-      path: "productos",
+      hash: "/#products",
     },
     {
       title: "Proceso de compra",
       id: "proceso",
-      path: "proceso",
+      hash: "/#header",
     },
   ];
 
   return (
     <div key="navItemsBeforeLogo" className="flex flex-col lg:flex-row">
       {navItemsBeforeLogo.map((link) => (
-        <NavLink key={link.id} to={`/link/${link.path}`} className="mx-4">
+        <NavLink key={link.id} to={link.hash} className="mx-4">
           {link.title}
         </NavLink>
       ))}

@@ -5,5 +5,32 @@
 * {
   margin: 0;
   padding: 0;
-  
+}
+/* TITULOS */
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 48px;
+}
+/* SUBTITULOS */
+h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 18px;
+}
+
+h4 {
+  font-family: "Roboto", sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+}
+/* TEXTOS */
+p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 14px;
 }

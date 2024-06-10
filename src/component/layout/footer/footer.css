@@ -1,3 +1,21 @@
+h1 {
+  font-family: "Plus Jakarta Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+}
+a {
+  font-family: "Plus Jakarta Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+}
+.txtFooter {
+  font-family: "Plus Jakarta Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+}
 .logoF {
   width: 300px;
   height: 300px;
@@ -12,4 +30,3 @@
   margin-top: 4px;
   margin-left: 3px;
 }
-

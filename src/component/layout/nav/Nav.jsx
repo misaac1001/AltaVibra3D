@@ -14,7 +14,7 @@ export const CustomNav = () => {
   };
 
   return (
-    <div className="bg-white text-black p-4 navStyle">
+    <div className="p-4 navStyle">
       <div className="flex items-center justify-between relative w-full">
         <div className="hidden lg:flex lg:items-center lg:order-2 lg:mx-7">
           <NavItemsBeforeLogo className="block lg:inline-block lg:mt-0 lg:mx-5 text-black hover:text-black mr-4" />

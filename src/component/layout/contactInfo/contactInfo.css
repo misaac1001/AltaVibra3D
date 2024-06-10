@@ -10,14 +10,15 @@ span {
   height: 560px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
 }
 
 .seccion {
   display: flex;
   flex-direction: column;
   justify-content: start;
-  margin: 10px 0;
+  margin: 10px;
+  margin-bottom: 83px;
+
 }
 
 .icono-burbuja,
@@ -25,9 +26,9 @@ span {
 .icono-ubicacion {
   /* Estilos para los íconos */
   margin-right: 10px;
-  background-color: rgb(255, 120, 143);
-  height: 40px;
-  width: 40px;
+  background-color: #ff7ebd;
+  height: 50px;
+  width: 50px;
   border-radius: 30%;
 }
 
@@ -48,4 +49,10 @@ span {
   .sm-icon-size {
     font-size: 3rem !important;
   }
+}
+
+.txtSm {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
 }
