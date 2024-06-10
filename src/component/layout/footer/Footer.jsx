@@ -4,6 +4,7 @@ import "./footer.css";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
+import { NavLink } from "react-router-dom";
 
 export const Footer = () => {
   const navItems = [
@@ -32,7 +33,7 @@ export const Footer = () => {
   return (
     <>
       <footer>
-        <section className="flex justify-around lg:flex-row flex-col items-center mb-5 mt-5" style={{background:"#FFF9F9"}}>
+        <section className="flex justify-around lg:flex-row flex-col items-center mb-5 footerStyle" style={{background:"#FFF9F9"}}>
           <div className="logoF">
             <Logo className="" />
           </div>
@@ -44,9 +45,9 @@ export const Footer = () => {
             </h1>
             <div key="navItemsAfterLogo" className="flex flex-col items-center txtFooter">
               {navItems.map((link) => (
-                <div key={link.id} to={`/${link.path}`} className="my-2">
+                <NavLink key={link.id} to={`/${link.path}`} className="my-2">
                   {link.title}
-                </div>
+                </NavLink>
               ))}
             </div>
           </div>
@@ -57,7 +58,7 @@ export const Footer = () => {
             </h1>
             <div className="flex lg:flex-col lg:items-center mb-5">
               <a
-                href="https://api.whatsapp.com/send?phone=5491140828549&text=Hola!,%20quiero%20información:
+                href="https://api.whatsapp.com/send?phone=5493512418667&text=Hola!,%20quiero%20información:
                       "
                 target="_blank"
                 className="flex"
@@ -72,8 +73,7 @@ export const Footer = () => {
                 <div className="hidden lg:block mx-2 mt-2">Whatsapp</div>
               </a>
               <a
-                href="https://api.whatsapp.com/send?phone=5491140828549&text=Hola!,%20quiero%20información:
-                      "
+                href="https://www.facebook.com/people/ALTA-VIBRA-3D/100084878795786/"
                 target="_blank"
                 className="flex"
                 rel="noopener noreferrer"
@@ -87,8 +87,7 @@ export const Footer = () => {
                 <div className="hidden lg:block mx-2 lg:mt-5">Facebook</div>
               </a>
               <a
-                href="https://api.whatsapp.com/send?phone=5491140828549&text=Hola!,%20quiero%20información:
-                      "
+                href="https://www.instagram.com/altavibra_3d/"
                 target="_blank"
                 className="flex"
                 rel="noopener noreferrer"

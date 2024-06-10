@@ -1,17 +1,16 @@
-h1 {
-  font-family: "Plus Jakarta Sans";
+h1 {  
   font-size: 20px;
   font-style: normal;
   font-weight: 600;
 }
 a {
-  font-family: "Plus Jakarta Sans";
+
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
 }
 .txtFooter {
-  font-family: "Plus Jakarta Sans";
+  
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -21,7 +20,7 @@ a {
   height: 300px;
 }
 .icons {
-  background-color: rgb(255, 120, 143);
+  background-color: #ff7ebd;
   height: 40px;
   width: 40px;
   border-radius: 100%;
@@ -30,3 +29,8 @@ a {
   margin-top: 4px;
   margin-left: 3px;
 }
+
+.footerStyle {
+  margin-bottom: 80px ;
+}
+

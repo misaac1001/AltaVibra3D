@@ -6,9 +6,10 @@ import { CustomNav } from "./component/layout/nav/Nav";
 import { Banner } from "./assets/banner/Banner";
 import { Products } from "./component/layout/products/Products";
 import { ProductList } from "./component/specific/productList/ProductList";
-import { Clientes } from "./pages/Clientes";
-import { Nosotras } from "./pages/Nosotras";
+
 import { Footer } from "./component/layout/footer/Footer";
+import { Clientes } from "./pages/clientes/Clientes";
+import { Nosotras } from "./pages/nosotras/Nosotras";
 
 function App() {
   return (
