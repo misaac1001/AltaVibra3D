@@ -17,17 +17,7 @@ export const ProductList = ({ products }) => {
 
   return (
     <div className="container mt-4">
-      <div className="mb-3">
-        <label htmlFor="searchInput" className="form-label">
-          Buscar
-        </label>
-        <input
-          id="searchInput"
-          className="form-control"
-          type="text"
-          value={filterState}
-          onChange={handleFilterChange}
-        />
+      <div className="mb-3"> 
       </div>
       <div className="d-flex flex-wrap justify-content-center gap-3">
         {filteredProducts.map((product) => (

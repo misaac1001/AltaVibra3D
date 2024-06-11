@@ -41,9 +41,7 @@ export const Item = ({ product }) => {
           />
           <div className="px-6 py-4">
             <div className="font-bold text-xl mb-2">{product.nombre}</div>
-            <p className="text-gray-700 text-base">Precio: {product.precio}</p>
-            <p className="text-gray-700 text-base">Descripción: {product.desc}</p>
-            <p className="text-gray-700 text-base">Stock: {product.stock}</p>
+            
             <Link to={`/detalle/${product.id}`}>
               <button className="mt-4 bg-gray-200 hover:bg-gray-300 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow w-full">
                 Detalles
