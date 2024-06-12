@@ -1,5 +1,4 @@
 import { useState } from "react";
-import PropTypes from "prop-types";
 import { Item } from "./Item";
 
 export const ProductList = ({ products }) => {
@@ -16,10 +15,10 @@ export const ProductList = ({ products }) => {
     : products;
 
   return (
-    <div className="container mt-4">
-      <div className="mb-3"> 
+    <div >
+      <div > 
       </div>
-      <div className="d-flex flex-wrap justify-content-center gap-3">
+      <div >
         {filteredProducts.map((product) => (
           <Item key={product.id} product={product} />
         ))}
@@ -28,6 +27,3 @@ export const ProductList = ({ products }) => {
   );
 };
 
-ProductList.propTypes = {
-  children: PropTypes.node.isRequired,
-};

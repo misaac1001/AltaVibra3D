@@ -41,12 +41,18 @@ export const Products = () => {
   const handleCategoryClick = (category) => {
     setActiveCategory(category);
     setActiveSubcategory(null); // Resetea la subcategoría al cambiar de categoría
-
-    // Filtra los productos basándose en la categoría seleccionada
-    let filteredProducts = Object.keys(productsData[category]).reduce((acc, key) => {
-      return [...acc, ...productsData[category][key]];
-    }, []);
-
+  
+    let filteredProducts = [];
+    if (category === 'LLAVEROS' || category === 'MASCARAS') {
+      // Si la categoría es 'LLAVEROS' o 'MASCARAS', directamente asigna los productos correspondientes
+      filteredProducts = productsData[category];
+    } else if (productsData[category]) {
+      // Para categorías con subcategorías, como 'ANIMALES', filtra los productos basándose en la categoría seleccionada
+      filteredProducts = Object.keys(productsData[category]).reduce((acc, key) => {
+        return [...acc, ...productsData[category][key]];
+      }, []);
+    }
+  
     setProducts(filteredProducts); // Actualiza la lista de productos con los filtrados
     navigate(`/product/${category}`); // Navega a la ruta de la categoría
   };
@@ -55,6 +61,8 @@ export const Products = () => {
     setActiveSubcategory(subcategory);
     navigate(`/product/${activeCategory}/${subcategory}`); // Navega a la ruta de la subcategoría
   };
+
+  
 
   return (
     <div className="container mt-4">
