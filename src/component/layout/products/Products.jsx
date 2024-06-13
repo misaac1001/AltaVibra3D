@@ -2,7 +2,35 @@ import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { productsData } from '../../../servicesAPI/products';
 import { ProductList } from '../../specific/productList/ProductList';
-import { Loading } from '../../loading/Loading';
+import {Loading} from '/src/component/loading/Loading';
+import "./products.css";
+import { Box, Tabs, Tab } from '@mui/material';
+
+function a11yProps(index) {
+  return {
+    id: `simple-tab-${index}`,
+    'aria-controls': `simple-tabpanel-${index}`,
+  };
+}
+
+function CustomTabPanel(props) {
+  const { children, value, index, ...other } = props;
+  return (
+    <div
+      role="tabpanel"
+      hidden={value !== index}
+      id={`simple-tabpanel-${index}`}
+      aria-labelledby={`simple-tab-${index}`}
+      {...other}
+    >
+      {value === index && (
+        <Box sx={{ p: 3 }}>
+          <span>{children}</span>
+        </Box>
+      )}
+    </div>
+  );
+}
 
 export const Products = () => {
   const [products, setProducts] = useState([]);
@@ -62,16 +90,38 @@ export const Products = () => {
     navigate(`/product/${activeCategory}/${subcategory}`); // Navega a la ruta de la subcategoría
   };
 
+  const [value, setValue] = useState(0);
+
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
+    switch (newValue) {
+      case 0:
+        handleCategoryClick('ANIMALES');
+        break;
+      case 1:
+        handleCategoryClick('LLAVEROS');
+        break;
+      case 2:
+        handleCategoryClick('MASCARAS');
+        break;
+      default:
+        break;
+    }
+  };
+
   
 
   return (
-    <div className="container mt-4">
-      <h1 className="text-center mb-4">Productos</h1>
-      <div>
-        <button onClick={() => handleCategoryClick('ANIMALES')}>Animales</button>
-        <button onClick={() => handleCategoryClick('LLAVEROS')}>Llaveros</button>
-        <button onClick={() => handleCategoryClick('MASCARAS')}>Máscaras</button>
-      </div>
+    <div className="container mx-auto px-4 py-8 mt-8">
+      <h1 className="text-3xl text-center mb-6">Nuestros Productos</h1>
+      <Box className="Box" sx={{ borderBottom: 1, borderColor: 'divider' }}>
+  <Tabs className="Tabs" value={value} onChange={handleChange} aria-label="basic tabs example">
+    <Tab className="Tab" label="Animales" {...a11yProps(0)} />
+    <Tab className="Tab" label="Llaveros" {...a11yProps(1)} />
+    <Tab className="Tab" label="Máscaras" {...a11yProps(2)} />
+  </Tabs>
+</Box>
+      
       {activeCategory === 'ANIMALES' && (
         <div>
           <button onClick={() => handleSubcategoryClick('Dinosaurios')}>Dinosaurios</button>
@@ -82,6 +132,7 @@ export const Products = () => {
           <button onClick={() => handleSubcategoryClick('Mamíferos')}>Mamíferos</button>
         </div>
       )}
+      
       {loading ? <Loading /> : <ProductList products={products} />}
     </div>
   );

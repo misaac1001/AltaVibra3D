@@ -1,4 +1,6 @@
-import { ContactImage } from "../../../assets/images/ContactImage";
+import { ContactImage } from "../../../assets/images/contactImage/ContactImage";
+
+
 import "./contactInfo.css";
 import {} from "module";
 import AutoStoriesIcon from "@mui/icons-material/AutoStories";
