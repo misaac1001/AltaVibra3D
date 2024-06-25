@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { Loading } from "../../loading/Loading";
 import { productsData } from "../../../servicesAPI/products"; 
+import "./item.css"
 
 export const Item = ({ product }) => {
   const [productDetails, setProductDetails] = useState(null);
@@ -23,22 +24,23 @@ export const Item = ({ product }) => {
       {loading ? (
         <Loading />
       ) : (
-        <div className="max-w-xs mb-6 bg-black shadow-lg rounded overflow-hidden">
-  <img
-    src={product.img}
-    className="w-full"
-    alt={product.nombre}
-  />
-  <div className="px-6 py-4">
-    <div className="font-bold text-xl mb-2 text-white">{product.nombre}</div>
-    
-    <Link to={`/detalle/${product.id}`}>
-      <button className="mt-4 bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 border border-blue-700 rounded shadow w-full">
-        Ver
-      </button>
-    </Link>
-  </div>
-</div>
+        <div className="target">
+          <div className="name">{product.nombre}</div>
+          <div className="cardSize">
+          <img
+            src={product.img}
+            className=""
+            alt={product.nombre}
+          />
+          <div className="">
+            <Link to={`/detalle/${product.id}`}>
+              <button className="">
+                Ver
+              </button>
+            </Link>
+          </div>
+          </div>
+        </div>
       )}
     </>
   );

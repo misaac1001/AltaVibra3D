@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Item } from "./Item";
+import { Item } from "../item/Item";
 
 export const ProductList = ({ products }) => {
   const [filterState, setFilterState] = useState("");
@@ -15,10 +15,8 @@ export const ProductList = ({ products }) => {
     : products;
 
   return (
-    <div >
-      <div > 
-      </div>
-      <div >
+    <div className="container" >
+      <div className="flex flex-wrap " >
         {filteredProducts.map((product) => (
           <Item key={product.id} product={product} />
         ))}

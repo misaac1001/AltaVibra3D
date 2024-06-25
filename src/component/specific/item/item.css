@@ -1,0 +1,27 @@
+.target{
+    display: flex;
+width: 285px;
+height: 362px;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+gap: 8px;
+flex-shrink: 0;
+}
+
+.name{
+    display: flex;
+width: 128px;
+height: 24px;
+flex-direction: column;
+justify-content: center;
+flex-shrink: 0;
+}
+
+.cardSize {
+    width: 285px;
+height: 330px;
+flex-shrink: 0;
+border-radius: 24px;
+background: url(<path-to-image>) lightgray 50% / cover no-repeat, url(<path-to-image>) lightgray 50% / cover no-repeat;
+}

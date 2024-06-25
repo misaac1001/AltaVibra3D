@@ -5,7 +5,7 @@ export const productsData = {
         nombre: "Anquilosaurio",
         btn: "Ver Detalles",
         Medidas: "11x 5 x 15",
-        img: "../assets/images/productImages/dinosaurios/Aniquilosaurio_verde.jpg",
+        img: "./assets/images/productImages/dinosaurios/Aniquilosaurio_verde.jpg",
       },
       {
         nombre: "Diloposaurio",
