@@ -10,7 +10,7 @@ const NavItemsBeforeLogo = () => {
     {
       title: "Productos",
       id: "productos",
-      hash: "/#products",
+      hash: "/product/:category",
     },
     {
       title: "Proceso de compra",

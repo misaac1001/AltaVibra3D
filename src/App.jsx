@@ -10,25 +10,28 @@ import { ProductList } from "./component/specific/productList/ProductList";
 import { Footer } from "./component/layout/footer/Footer";
 import { Clientes } from "./pages/clientes/Clientes";
 import { Nosotras } from "./pages/nosotras/Nosotras";
+import { Header } from "./component/layout/header/Header";
 
 function App() {
   return (
     <>
       <BrowserRouter>
-        {/* <CartContextProvider value={{}}> */}
-          <CustomNav />
-          <Banner />
-          <Routes>
-            <Route path="/" element={<Home/>} />
-            <Route path="/product/:category" element={<Products />} />
-            <Route path="/product/:category/:subcategory" element={<Products />} />
-            <Route path="/detalle/pid" element={<ProductList />} />
-            <Route path="/clientes" element={<Clientes />} />
-            <Route path="/nosotras" element={<Nosotras />} />
-            <Route path="*" element={<Navigate to="/" />} />
-          </Routes>
-          <Footer />
-        {/* </CartContextProvider> */}
+        <CustomNav />
+        <Banner />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/product/:category" element={<Products />} />
+          <Route
+            path="/product/:category/:subcategory"
+            element={<Products />}
+          />
+          <Route path="/#header" element={<Header />} />
+          <Route path="/detalle/pid" element={<ProductList />} />
+          <Route path="/clientes" element={<Clientes />} />
+          <Route path="/nosotras" element={<Nosotras />} />
+          <Route path="*" element={<Navigate to="/" />} />
+        </Routes>
+        <Footer />
       </BrowserRouter>
     </>
   );
